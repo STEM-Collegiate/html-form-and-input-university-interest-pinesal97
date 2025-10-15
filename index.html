@@ -24,16 +24,16 @@ placeholder="Enter Last Name Here">
 </li>
 <li>
 <label for="email">Email Address:</label>
-<input type="text" id="email" name="email" placeholder="Enter Email Address Here">
+<input type="email" id="email" name="email" placeholder="Enter Email Address Here">
 </li>
 <li>
 <label for="grade-level">Grade Level:</label>
 <input type="number" id="grade-level" name="grade-level" min="9" max="12" placeholder="9-12">
 </li>
 <li>
-<label for="text-area">Text Area:</label>
-<input type="text" id="text-area" name="text-area"
-placeholder="Questions or Comments?">
+<label for="textarea">Text Area:</label>
+<textarea id="textarea" name="textarea"
+placeholder="Questions or Comments?" rows="4" cols="40"></textarea>
 </li>
 </ul>
 </fieldset>
@@ -41,21 +41,36 @@ placeholder="Questions or Comments?">
 <fieldset>
     <legend>University Interests</legend>
 
-<ul class="ul">
+<label for="univeristy">Select your University:</label>
+<select id="univeristy" name="univeristy">
+    <option value="">-- Select--</option>
+    <option value="UofA">Univeristy of Alberta</option>
+    <option value="UofA">Univeristy of Calgary</option>
+    <option value="UofA">Univeristy of Toronto</option>
+    <option value="UofA">Univeristy of British Columbia</option>
+</select>
 
-<li> Univeristy of Alberta<input type="checkbox" id="uinterest" name="uinterest"></li>
-
-<li> Univeristy of Calgary<input type="checkbox" id="uinterest" name="uinterest"></li>
-
-<li> Univeristy of Toronto<input type="checkbox" id="uinterest" name="uinterest"></li> 
-
-<li> Univeristy of British Columbia<input type="checkbox" id="uinterest" name="uinterest"></li>
+  <form>
+        <label>
+            <input type="checkbox" id="MIT" name="mit" value="MIT">
+            Massachusetts Institute of Technology (MIT)
+        </label><br>
+        <label>
+            <input type="checkbox" id="CalTech" name="caltech" value="CalTech">
+            California Institute of Technology (CalTech)
+        </label><br>
+        <label>
+            <input type="checkbox" id="Harvard" name="harvard" value="Harvard">
+            Harvard University
+        </label><br>
+        
+    </form>
 
 <p>Preferred Session Format</p>
 <input type="radio" id="pformat" name="pformat">
 <label for="pformat">In-person Presentation</label><br>
-<input type="radio" id="pformat" name="pformat">
-<label for="pformat">Virtual Q & A</label><br>
+<input type="radio" id="pformat2" name="pformat2">
+<label for="pformat2">Virtual Q & A</label><br>
 </ul>
 
 <label for="ilevel">Interest Level:</label>
@@ -79,15 +94,17 @@ placeholder="Questions or Comments?">
 <label for="confirmation">Do you confirm to abide the event guidlines?</label>
 <a href="tos.html">Terms of Services</a>
 
-<ul>
-<li> I agree
-    <input type="checkbox" id="confirmation" name="confirmation">
-    </li>
-    <li>
-        No, I do not agree
-    <input type="checkbox" id="confirmation" name="confirmation">
-    </li>
-</ul>
+<form>
+        <label>
+            <input type="checkbox" id="agree" name="agree" value="agree">
+            I agree
+        </label><br>
+        <label>
+            <input type="checkbox" id="idontagree" name="idontagree" value="idontagree">
+            I do not Agree
+        </label><br>
+        
+    </form>
 <a href="Thankyou.html">
 <button type="submit">Submit Form</button>
 </a>
